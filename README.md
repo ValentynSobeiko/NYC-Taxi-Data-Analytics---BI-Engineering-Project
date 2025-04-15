@@ -97,14 +97,13 @@ Pipeline expression for v_date Set Variable activity
 ## Copy to Staging
 Pre Copy Script
 
-```
-```
+
 
 ## v_end_date
 Pipeline expression for v_end_date Set Variable activity
 
 ```
-@formatDateTime(addToTime(activity('Latest Processed Data').output.resultSets[0].rows[0].latest_processed_pickup,1, 'Month'), 'yyyy-MM')
+@addToTime(concat(variables('v_date'),'-01'), 1, 'Month')
 ```
 
 
