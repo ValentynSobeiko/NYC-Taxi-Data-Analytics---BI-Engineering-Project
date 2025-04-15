@@ -59,10 +59,18 @@ The project demonstrates the construction of a dynamic process for loading and p
 |Identifying and filtering incorrect records|
 | ----------- |
 ![image](https://github.com/user-attachments/assets/f3f3df97-05ea-4e47-baa9-f4b6f9e7dae8)
+SELECT max(tpep_pickup_datetime), min(tpep_pickup_datetime) from dbo.nyctaxi_yellow
+
 
 |Implementing a stored procedure to remove invalid data |
 | ----------- |
 ![image](https://github.com/user-attachments/assets/04b73801-5963-4d3b-8360-ea368abe2896)
+
+CREATE PROCEDURE stg.data_cleaning_stg
+@end_date datetime2,
+@start_date datetime2
+as
+DELETE from stg.NYC_Taxi_yellow WHERE tpep_pickup_datetime < @start_date or tpep_pickup_datetime > @end_date ;
 
 
 
