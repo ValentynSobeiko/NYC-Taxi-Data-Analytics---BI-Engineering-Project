@@ -264,6 +264,10 @@ AS
     FROM dbo.nyctaxi_yellow;
 ```
 
+| |
+| ----------- |
+![image](https://github.com/user-attachments/assets/afe808e5-1104-4888-bb87-318d359d10fa)
+
 
 
 
