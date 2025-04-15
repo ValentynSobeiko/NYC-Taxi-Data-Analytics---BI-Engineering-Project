@@ -8,21 +8,21 @@ The project demonstrates the construction of a dynamic process for loading and p
 
 
 # Technology Stack
--  ** Microsoft Fabric
+-  Microsoft Fabric
 
--  ** Data Factory Pipelines
+-  Data Factory Pipelines
 
--  ** Lakehouse & OneLake
+-  Lakehouse & OneLake
 
--  ** Dataflows Gen2
+-  Dataflows Gen2
 
--  ** T-SQL & Stored Procedures
+-  T-SQL & Stored Procedures
 
--  ** Parquet Files
+-  Parquet Files
 
--  ** Dynamic Content / Parameters
+-  Dynamic Content / Parameters
 
--  ** Power BI
+-  Power BI
 
 
 
