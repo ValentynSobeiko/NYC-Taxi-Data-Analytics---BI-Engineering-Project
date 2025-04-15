@@ -27,6 +27,8 @@ The project demonstrates the construction of a dynamic process for loading and p
 
 ## Solution architecture
 
+| |
+| ----------- |
 ![image](https://github.com/user-attachments/assets/e1ea2f37-13cd-4bd7-b556-c93c96e9a73c)
 
 # Project Implementation Stages 
