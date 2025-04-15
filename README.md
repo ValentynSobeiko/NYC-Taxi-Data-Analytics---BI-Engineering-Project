@@ -52,6 +52,6 @@ The project demonstrates the construction of a dynamic process for loading and p
 ![image](https://github.com/user-attachments/assets/5cd41263-1b00-436a-a7e3-ab671bfb478a)
 ![image](https://github.com/user-attachments/assets/9bb2a6de-b836-464e-928e-9818f35dfd3b)
 
-
+## Data Cleaning & Filtering
 
 
