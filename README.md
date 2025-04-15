@@ -71,7 +71,8 @@ The project demonstrates the construction of a dynamic process for loading and p
 | ----------- |
 ![image](https://github.com/user-attachments/assets/4e877ad7-c548-4ff5-ab88-2543c5424325)
 
-
+- Latest Processed Data
+ For the Script Activity “Latest Processed Data”
 
 
 
