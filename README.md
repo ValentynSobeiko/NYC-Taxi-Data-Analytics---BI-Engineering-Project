@@ -30,6 +30,19 @@ The project demonstrates the construction of a dynamic process for loading and p
 ![image](https://github.com/user-attachments/assets/e1ea2f37-13cd-4bd7-b556-c93c96e9a73c)
 
 # Project Implementation Stages 
+
+# Setting Up the Development Environment
+
+-Initialized a new workspace in Microsoft Fabric, created a Lakehouse to store raw data, and uploaded Parquet files for NYC taxi trips.
+
+![image](https://github.com/user-attachments/assets/94ce3c0b-2dd5-4a6e-8cc4-dcb32972f700)
+![image](https://github.com/user-attachments/assets/cd4e5b0e-d58b-44da-9175-18d592c0a6ea)
+![image](https://github.com/user-attachments/assets/050945b1-daa5-4900-a7bd-1abf65b4c2ef)
+
+
+
+
+
 # Creating Data Warehouse & Loading Data
 - Set up a Data Warehouse and loaded raw data into staging tables. Built a Data Factory pipeline with dynamic variables to automate file ingestion and streamline data loading.
 ![image](https://github.com/user-attachments/assets/d8bd3c77-bd00-4ec2-a2d3-6b656e7b1ac7)
