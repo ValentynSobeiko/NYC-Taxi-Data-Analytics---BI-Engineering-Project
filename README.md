@@ -33,5 +33,9 @@ The project demonstrates the construction of a dynamic process for loading and p
 # Creating Data Warehouse & Loading Data
 - Set up a Data Warehouse and loaded raw data into staging tables. Built a Data Factory pipeline with dynamic variables to automate file ingestion and streamline data loading.
 ![image](https://github.com/user-attachments/assets/d8bd3c77-bd00-4ec2-a2d3-6b656e7b1ac7)
+![image](https://github.com/user-attachments/assets/5cd41263-1b00-436a-a7e3-ab671bfb478a)
+![image](https://github.com/user-attachments/assets/9bb2a6de-b836-464e-928e-9818f35dfd3b)
+
+
 
 
