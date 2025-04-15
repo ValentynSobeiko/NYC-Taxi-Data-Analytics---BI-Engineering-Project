@@ -71,8 +71,16 @@ The project demonstrates the construction of a dynamic process for loading and p
 | ----------- |
 ![image](https://github.com/user-attachments/assets/4e877ad7-c548-4ff5-ab88-2543c5424325)
 
-- Latest Processed Data
- For the Script Activity “Latest Processed Data”
+## Latest Processed Data
+For the Script Activity “Latest Processed Data”
+
+```
+select top 1 
+latest_processed_pickup
+from metadata.processing_log
+where table_processed = 'staging_nyctaxi_yellow'
+order by latest_processed_pickup desc;
+```
 
 
 
