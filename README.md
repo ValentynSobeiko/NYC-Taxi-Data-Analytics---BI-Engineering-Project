@@ -236,7 +236,7 @@ INSERT INTO dbo.nyctaxi_yellow
     on nty.DOLocationID = lu2.LocationID;
 ```
 | |
-| The same transformations can be performed visually using Dataflow Gen2, offering a low-code alternative to stored procedures.|
+| The same transformations can be performed visually using Dataflow Gen2, offering a low-code alternative to stored procedures. |
 ![image](https://github.com/user-attachments/assets/0b06116f-ccf4-4235-b0d8-2e8cedea92da)
 
 
