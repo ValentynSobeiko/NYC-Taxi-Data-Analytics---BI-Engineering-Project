@@ -1,9 +1,6 @@
-# NYC-Taxi-Data-Project
+# Data Engineering Pipeline: Yellow Taxi Trips NYC 2024 — Microsoft Fabric Project
 
-
-
-
-# NYC-Taxi-Data-Project
+# 
 
 This project demonstrates a complete, end-to-end Azure data engineering solution, beginning with data ingestion from a local SQL database and culminating in automated Power BI reporting. The pipeline includes data extraction, transformation, and loading processes, fully orchestrated within Azure, showcasing a streamlined approach to data automation and visualization.
 
