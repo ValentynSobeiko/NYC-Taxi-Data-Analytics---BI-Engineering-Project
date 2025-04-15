@@ -174,6 +174,7 @@ This step involves transforming and enriching data from the Staging area and loa
 
 
 ## Create the dbo.nyctaxi_yellow table
+
 This is the initial empty table so we can load the data from the Dataflow/Stored Procedure acivities
 
 ```
@@ -196,6 +197,7 @@ CREATE TABLE dbo.nyctaxi_yellow
 
 ## SP Processing Presentation
 For the Stored Procedure Activity “SP Processing Presentation ”.
+
 Create the Stored Procedure dbo.process_presentation in the Data Warehouse using the code below.
 
 ```
@@ -235,8 +237,8 @@ INSERT INTO dbo.nyctaxi_yellow
     left join stg.NYC_Taxi_zone_lookup lu2
     on nty.DOLocationID = lu2.LocationID;
 ```
-| |
 | The same transformations can be performed visually using Dataflow Gen2, offering a low-code alternative to stored procedures. |
+| ----------- |
 ![image](https://github.com/user-attachments/assets/0b06116f-ccf4-4235-b0d8-2e8cedea92da)
 
 
