@@ -54,4 +54,18 @@ The project demonstrates the construction of a dynamic process for loading and p
 
 ## Data Cleaning & Filtering
 
+- Identified and removed invalid records (e.g., incorrect dates) by implementing a stored procedure to ensure data quality before further processing.
+
+|Identifying and filtering incorrect records|
+| ----------- |
+![image](https://github.com/user-attachments/assets/f3f3df97-05ea-4e47-baa9-f4b6f9e7dae8)
+
+|Implementing a stored procedure to remove invalid data |
+| ----------- |
+![image](https://github.com/user-attachments/assets/04b73801-5963-4d3b-8360-ea368abe2896)
+
+
+
+
+
 
