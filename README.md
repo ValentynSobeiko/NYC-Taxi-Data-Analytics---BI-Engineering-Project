@@ -8,7 +8,7 @@ The project demonstrates the construction of a dynamic process for loading and p
 
 
 
-# Technology Stack
+## Technology Stack
 -  Microsoft Fabric
 
 -  Data Factory Pipelines
@@ -25,13 +25,13 @@ The project demonstrates the construction of a dynamic process for loading and p
 
 -  Power BI
 
-# Solution architecture
+## Solution architecture
 
 ![image](https://github.com/user-attachments/assets/e1ea2f37-13cd-4bd7-b556-c93c96e9a73c)
 
 # Project Implementation Stages 
 
-# Setting Up the Development Environment & Loading Initial Data
+## Setting Up the Development Environment & Loading Initial Data
 
 - Created a workspace in Microsoft Fabric, set up a Lakehouse and a Data Warehouse, uploaded NYC taxi trip Parquet files, and used a lookup pipeline to transfer reference data into a staging table.
 
