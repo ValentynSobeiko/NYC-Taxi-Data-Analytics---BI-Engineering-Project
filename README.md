@@ -199,10 +199,44 @@ For the Stored Procedure Activity “SP Processing Presentation ”.
 Create the Stored Procedure dbo.process_presentation in the Data Warehouse using the code below.
 
 ```
-@addToTime(concat(variables('v_date'),'-01'), 1, 'Month')
+CREATE PROCEDURE dbo.process_presentation
+AS
+INSERT INTO dbo.nyctaxi_yellow
+    SELECT
+    CASE 
+        WHEN nty.VendorID = 1 THEN 'Creative Mobile Technologies'
+        WHEN nty.VendorID = 2 THEN 'Curb Mobility, LLC'
+ 	WHEN nty.VendorID = 6 THEN 'Myle Technologies Inc'
+ 	WHEN nty.VendorID = 7 THEN 'Helix'
+        else 'Unknown'
+    end as vendor,
+    format(nty.tpep_pickup_datetime,'yyyy-MM-dd') as tpep_pickup_datetime,
+    format(nty.tpep_dropoff_datetime,'yyyy-MM-dd') as tpep_dropoff_datetime,
+    lu1.Borough as pu_borough,
+    lu1.Zone as pu_zone,
+    lu2.Borough as pu_borough,
+    lu2.Zone as pu_zone,
+    CASE 
+  	WHEN nty.payment_type = 0 THEN 'Flex Fare Trip'
+        WHEN nty.payment_type = 1 THEN 'Credit Card'
+        WHEN nty.payment_type = 2 THEN 'Cash'
+        WHEN nty.payment_type = 3 THEN 'No Charge'
+        WHEN nty.payment_type = 4 THEN 'Dispute'
+        WHEN nty.payment_type = 5 THEN 'Unknown'
+        WHEN nty.payment_type = 6 THEN 'Voided Trip'
+        else 'Unknown'
+    end as payment_method,
+    nty.passenger_count as passenger_count,
+    nty.trip_distance as trip_distance,
+    nty.total_amount as total_amount
+    from  stg.NYC_Taxi_yellow nty
+    left join stg.NYC_Taxi_zone_lookup lu1
+    on nty.PULocationID = lu1.LocationID
+    left join stg.NYC_Taxi_zone_lookup lu2
+    on nty.DOLocationID = lu2.LocationID;
 ```
 | |
-| ----------- |
+| The same transformations can be performed visually using Dataflow Gen2, offering a low-code alternative to stored procedures.|
 ![image](https://github.com/user-attachments/assets/0b06116f-ccf4-4235-b0d8-2e8cedea92da)
 
 
