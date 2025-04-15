@@ -6,7 +6,7 @@ Thanks to [Mr.Malvik Vaghadia](udemy.com/course/microsoft-fabric-the-ultimate-gu
 
 The project demonstrates the construction of a dynamic process for loading and preparing data with automatic parameterization and updating, including working with metadata and building a final report in Power BI.
 
-![image](https://github.com/user-attachments/assets/a5c8ab90-dd2c-4733-b1da-ced036b4c8de)
+![image](https://github.com/user-attachments/assets/e1ea2f37-13cd-4bd7-b556-c93c96e9a73c)
 
 
 
