@@ -102,5 +102,20 @@ Pipeline expression for v_end_date Set Variable activity
 @addToTime(concat(variables('v_date'),'-01'), 1, 'Month')
 ```
 
+## SP Removing Outlier Dates
+Pipeline expression for v_end_date Set Variable activity
+
+```
+create procedure stg.data_cleaning_stg
+@end_date datetime2,
+@start_date datetime2
+as
+delete from stg.nyctaxi_yellow where tpep_pickup_datetime < @start_date or tpep_pickup_datetime > @end_date;
+```
+
+| ----------- |
+![image](https://github.com/user-attachments/assets/c420857a-7e56-40cd-bb13-a1c5edf88c40)
+
+
 
 
