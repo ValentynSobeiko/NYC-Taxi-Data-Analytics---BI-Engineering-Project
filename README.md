@@ -166,9 +166,70 @@ AS
 
 This step involves transforming and enriching data from the Staging area and loading it into the Presentation layer. Using a Dataflow Gen2, unnecessary columns are removed, values are standardized, and lookup tables are joined to enhance the dataset. The result is a clean, analytics-ready table used for reporting in Power BI.
 
+
+| |
+| ----------- |
+![image](https://github.com/user-attachments/assets/25504c74-b838-4f12-a766-4d815809b2ad)
+
+
+
+## Create the dbo.nyctaxi_yellow table
+This is the initial empty table so we can load the data from the Dataflow/Stored Procedure acivities
+
+```
+CREATE TABLE dbo.nyctaxi_yellow
+(   vendor varchar(50),
+	tpep_pickup_datetime date,
+	tpep_dropoff_datetime date,
+	PU_Borough varchar(100),
+	PU_Zone varchar(100),
+	DO_Borough varchar(100),
+	DO_Zone varchar(100),
+	Payment_method varchar(50),
+	passenger_count int,
+	trip_distance FLOAT,
+	total_amount FLOAT
+); 
+```
+
+
+
+## SP Processing Presentation
+For the Stored Procedure Activity “SP Processing Presentation ”.
+Create the Stored Procedure dbo.process_presentation in the Data Warehouse using the code below.
+
+```
+@addToTime(concat(variables('v_date'),'-01'), 1, 'Month')
+```
 | |
 | ----------- |
 ![image](https://github.com/user-attachments/assets/0b06116f-ccf4-4235-b0d8-2e8cedea92da)
+
+
+
+## SP Loading Presentation Metadata
+For the Stored Procedure Activity “SP Loading Staging Metadata”.
+
+Create the Stored Procedure metadata.insert_staging_metadata in the Data Warehouse using the code below.
+
+```
+CREATE PROCEDURE metadata.insert_presentation_metadata
+    @pipeline_run_id VARCHAR(255),
+    @table_name VARCHAR(255),
+    @processed_date DATETIME2
+AS
+    INSERT INTO metadata.processing_log (pipeline_run_id, table_processed, rows_processed, latest_processed_pickup, processed_datetime)
+    SELECT
+        @pipeline_run_id AS pipeline_id,
+        @table_name AS table_processed,
+        COUNT(*) AS rows_processed,
+        MAX(tpep_pickup_datetime) AS latest_processed_pickup,
+        @processed_date AS processed_datetime
+    FROM dbo.nyctaxi_yellow;
+```
+
+
+
 
 
 
