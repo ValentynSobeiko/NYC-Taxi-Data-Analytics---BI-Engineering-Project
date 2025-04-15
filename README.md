@@ -33,7 +33,7 @@ The project demonstrates the construction of a dynamic process for loading and p
 
 # Setting Up the Development Environment
 
--Created a workspace in Microsoft Fabric, set up a Lakehouse and a Data Warehouse, uploaded NYC taxi trip Parquet files, and used a lookup pipeline to transfer reference data into a staging table.
+- Created a workspace in Microsoft Fabric, set up a Lakehouse and a Data Warehouse, uploaded NYC taxi trip Parquet files, and used a lookup pipeline to transfer reference data into a staging table.
 
 | Created a Lakehouse to store raw NYC taxi trip data in Parquet format. This serves as the initial storage layer for further processing. |
 | ----------- |
@@ -41,17 +41,11 @@ The project demonstrates the construction of a dynamic process for loading and p
 ![image](https://github.com/user-attachments/assets/ab7bf7a2-2e62-4154-83d5-3a107b06c014)
 
 
-
-
-
-
 |Transferred lookup zone data from Lakehouse using a pipeline into a staging table for enriched processing. |
 | ----------- |
 ![image](https://github.com/user-attachments/assets/94ce3c0b-2dd5-4a6e-8cc4-dcb32972f700)
 ![image](https://github.com/user-attachments/assets/cd4e5b0e-d58b-44da-9175-18d592c0a6ea)
 ![image](https://github.com/user-attachments/assets/050945b1-daa5-4900-a7bd-1abf65b4c2ef)
-
-
 
 
 
