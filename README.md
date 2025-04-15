@@ -119,5 +119,50 @@ delete from stg.nyctaxi_yellow where tpep_pickup_datetime < @start_date or tpep_
 ![image](https://github.com/user-attachments/assets/c420857a-7e56-40cd-bb13-a1c5edf88c40)
 
 
+## SP Loading Staging Metadata
+Pipeline expression for v_end_date Set Variable activity
+
+For the Stored Procedure Activity “SP Loading Staging Metadata”.
+
+Code to create the metadata.processing_log table.
+```
+CREATE SCHEMA metadata;
+
+CREATE table metadata.processing_log
+(
+    pipeline_run_id VARCHAR(255),
+    table_processed VARCHAR(255),
+    rows_processed INT,
+    latest_processed_pickup datetime2(6),
+    processed_datetime datetime2(6)
+);
+```
+
+Created the Stored Procedure metadata.insert_staging_metadata in the Data Warehouse using the code below.
+
+
+```
+CREATE PROCEDURE metadata.insert_staging_metadata
+    @pipeline_run_id VARCHAR(255),
+    @table_name VARCHAR(255),
+    @processed_date DATETIME2
+AS
+    INSERT INTO metadata.processing_log (pipeline_run_id, table_processed, rows_processed, latest_processed_pickup, processed_datetime)
+    SELECT
+        @pipeline_run_id AS pipeline_id,
+        @table_name AS table_processed,
+        COUNT(*) AS rows_processed,
+        MAX(tpep_pickup_datetime) AS latest_processed_pickup,
+        @processed_date AS processed_datetime
+    FROM stg.NYC_Taxi_yellow;
+);
+```
+| |
+| ----------- |
+![image](https://github.com/user-attachments/assets/f578979b-8f41-4bab-9b42-ca6a90513850)
+
+
+
+
 
 
