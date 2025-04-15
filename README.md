@@ -61,13 +61,12 @@ The project demonstrates the construction of a dynamic process for loading and p
 | ----------- |
 ![image](https://github.com/user-attachments/assets/04b73801-5963-4d3b-8360-ea368abe2896)
 
-## Pipeline from Landing to Staging
+# Pipeline from Landing to Staging
 - In this step, I moved raw data from the Landing zone to the Staging area. The data was loaded into staging tables in the Data Warehouse, where I applied basic transformations like cleaning, renaming columns, and validating formats. I also configured a Data Factory pipeline to automate this process, ensuring smooth data flow and preparing it for further processing.
 
 |Landing to Staging Pipeline|
 | ----------- |
 ![image](https://github.com/user-attachments/assets/6f6e2946-d610-4164-ae6c-b0876f7b7d0e)
-
 
 
 ## Latest Processed Data
