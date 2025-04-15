@@ -69,7 +69,8 @@ The project demonstrates the construction of a dynamic process for loading and p
 
 |Landing to Staging Pipeline|
 | ----------- |
-![image](https://github.com/user-attachments/assets/4e877ad7-c548-4ff5-ab88-2543c5424325)
+![image](https://github.com/user-attachments/assets/c264bea3-7d33-4c62-8a64-61a706fc9716)
+
 
 ## Latest Processed Data
 For the Script Activity “Latest Processed Data”
@@ -82,6 +83,26 @@ where table_processed = 'staging_nyctaxi_yellow'
 order by latest_processed_pickup desc;
 ```
 
+
+## v_date
+Pipeline expression for v_date Set Variable activity
+
+```
+@formatDateTime(addToTime(activity('Latest Processed Data').output.resultSets[0].rows[0].latest_processed_pickup,1, 'Month'), 'yyyy-MM')
+```
+
+## Copy to Staging
+Pre Copy Script
+
+```
+```
+
+## v_end_date
+Pipeline expression for v_end_date Set Variable activity
+
+```
+@formatDateTime(addToTime(activity('Latest Processed Data').output.resultSets[0].rows[0].latest_processed_pickup,1, 'Month'), 'yyyy-MM')
+```
 
 
 
