@@ -7,4 +7,33 @@ Thanks to [Mr.Malvik Vaghadia](udemy.com/course/microsoft-fabric-the-ultimate-gu
 The project demonstrates the construction of a dynamic process for loading and preparing data with automatic parameterization and updating, including working with metadata and building a final report in Power BI.
 
 
+# Technology Stack
+-  ** Microsoft Fabric
+
+-  ** Data Factory Pipelines
+
+-  ** Lakehouse & OneLake
+
+-  ** Dataflows Gen2
+
+-  ** T-SQL & Stored Procedures
+
+-  ** Parquet Files
+
+-  ** Dynamic Content / Parameters
+
+-  ** Power BI
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Project Implementation Stages 
