@@ -166,6 +166,11 @@ AS
 
 This step involves transforming and enriching data from the Staging area and loading it into the Presentation layer. Using a Dataflow Gen2, unnecessary columns are removed, values are standardized, and lookup tables are joined to enhance the dataset. The result is a clean, analytics-ready table used for reporting in Power BI.
 
+| |
+| ----------- |
+![image](https://github.com/user-attachments/assets/0b06116f-ccf4-4235-b0d8-2e8cedea92da)
+
+
 
 
 
