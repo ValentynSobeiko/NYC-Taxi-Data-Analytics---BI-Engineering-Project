@@ -69,7 +69,8 @@ The project demonstrates the construction of a dynamic process for loading and p
 
 |Landing to Staging Pipeline|
 | ----------- |
-![image](https://github.com/user-attachments/assets/c264bea3-7d33-4c62-8a64-61a706fc9716)
+![image](https://github.com/user-attachments/assets/6f6e2946-d610-4164-ae6c-b0876f7b7d0e)
+
 
 
 ## Latest Processed Data
