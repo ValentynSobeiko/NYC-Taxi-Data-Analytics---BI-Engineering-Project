@@ -35,7 +35,7 @@ The project demonstrates the construction of a dynamic process for loading and p
 
 ## Setting Up the Development Environment & Loading Initial Data
 
-- Created a workspace in Microsoft Fabric, set up a Lakehouse and a Data Warehouse, uploaded NYC taxi trip Parquet files, and used a lookup pipeline to transfer reference data into a staging table.
+Created a workspace in Microsoft Fabric, set up a Lakehouse and a Data Warehouse, uploaded NYC taxi trip Parquet files, and used a lookup pipeline to transfer reference data into a staging table.
 
 | Created a Lakehouse to store raw NYC taxi trip data in Parquet format. This serves as the initial storage layer for further processing. |
 | ----------- |
@@ -51,7 +51,7 @@ The project demonstrates the construction of a dynamic process for loading and p
 
 ## Data Cleaning & Filtering
 
-- Identified and removed invalid records (e.g., incorrect dates) by implementing a stored procedure to ensure data quality before further processing.
+Identified and removed invalid records (e.g., incorrect dates) by implementing a stored procedure to ensure data quality before further processing.
 
 |Identifying and filtering incorrect records|
 | ----------- |
@@ -62,7 +62,7 @@ The project demonstrates the construction of a dynamic process for loading and p
 ![image](https://github.com/user-attachments/assets/04b73801-5963-4d3b-8360-ea368abe2896)
 
 # Pipeline from Landing to Staging
-- In this step, I moved raw data from the Landing zone to the Staging area. The data was loaded into staging tables in the Data Warehouse, where I applied basic transformations like cleaning, renaming columns, and validating formats. I also configured a Data Factory pipeline to automate this process, ensuring smooth data flow and preparing it for further processing.
+In this step, I moved raw data from the Landing zone to the Staging area. The data was loaded into staging tables in the Data Warehouse, where I applied basic transformations like cleaning, renaming columns, and validating formats. I also configured a Data Factory pipeline to automate this process, ensuring smooth data flow and preparing it for further processing.
 
 |Landing to Staging Pipeline|
 | ----------- |
@@ -164,7 +164,7 @@ AS
 
 # Dataflow from Staging to Presentation
 
-- This step involves transforming and enriching data from the Staging area and loading it into the Presentation layer. Using a Dataflow Gen2, unnecessary columns are removed, values are standardized, and lookup tables are joined to enhance the dataset. The result is a clean, analytics-ready table used for reporting in Power BI.
+This step involves transforming and enriching data from the Staging area and loading it into the Presentation layer. Using a Dataflow Gen2, unnecessary columns are removed, values are standardized, and lookup tables are joined to enhance the dataset. The result is a clean, analytics-ready table used for reporting in Power BI.
 
 
 
