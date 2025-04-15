@@ -1,12 +1,10 @@
-# Data Engineering Pipeline: Yellow Taxi Trips NYC 2024 — Microsoft Fabric Project
+##Data Engineering Pipeline: Yellow Taxi Trips NYC 2024 — Microsoft Fabric Project
 
-# 
-
-This project demonstrates a complete, end-to-end Azure data engineering solution, beginning with data ingestion from a local SQL database and culminating in automated Power BI reporting. The pipeline includes data extraction, transformation, and loading processes, fully orchestrated within Azure, showcasing a streamlined approach to data automation and visualization.
+This project is a comprehensive solution for creating an end-to-end pipeline for data processing, transformation and visualization using Microsoft Fabric, including Lakehouse, Data Factory, Dataflows Gen2, SQL Stored Procedures and Power BI.
 
 Thanks to [Mr.Malvik Vaghadia](udemy.com/course/microsoft-fabric-the-ultimate-guide) for the project inspiration.
 
-
+The project demonstrates the construction of a dynamic process for loading and preparing data with automatic parameterization and updating, including working with metadata and building a final report in Power BI.
 
 
 # Project Implementation Stages 
