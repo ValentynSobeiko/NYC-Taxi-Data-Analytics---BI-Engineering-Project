@@ -276,7 +276,7 @@ Built an orchestration pipeline to automate monthly data processing between stag
 
 
 
-
+# Semantic Modelling and Power BI
 
 
 
