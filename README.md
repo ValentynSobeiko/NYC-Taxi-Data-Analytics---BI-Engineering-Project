@@ -274,6 +274,9 @@ Built an orchestration pipeline to automate monthly data processing between stag
 ![image](https://github.com/user-attachments/assets/0050904a-6e5a-467e-b731-f6e18791b45f)
 ![image](https://github.com/user-attachments/assets/951599e6-4fae-4895-a24f-6d5e6115347d)
 
+| |
+| ----------- |
+
 
 
 # Semantic Modelling and Power BI
