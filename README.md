@@ -288,8 +288,3 @@ Built a semantic model and created a Power BI report with filters
 
 
 
-| |
-| ----------- |
-![image](https://github.com/user-attachments/assets/9d16d2fc-b957-4768-9cd0-d7692a93ec23)
-
-
