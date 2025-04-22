@@ -289,15 +289,15 @@ Built a semantic model and created a Power BI report with filters
 # Conclusion
 This end-to-end data project showcased the full capabilities of Microsoft Fabric for building modern data analytics solutions. Starting with raw NYC Yellow Taxi trip data in Parquet format, I designed and implemented a complete pipeline that included:
 
--- Efficient data ingestion using Data Factory pipelines
+- Efficient data ingestion using Data Factory pipelines
 
--- Lakehouse architecture for scalable storage and processing
+- Lakehouse architecture for scalable storage and processing
 
--- Automated data cleaning, transformation, and validation via Dataflows Gen2 and stored procedures
+- Automated data cleaning, transformation, and validation via Dataflows Gen2 and stored procedures
 
--- Creation of a metadata logging system to track pipeline executions and data freshness
+- Creation of a metadata logging system to track pipeline executions and data freshness
 
--- Building a dynamic and interactive Power BI report for business insights
+- Building a dynamic and interactive Power BI report for business insights
 
 By combining key components of the Microsoft Fabric ecosystem — Lakehouse, Data Factory, Dataflows, and Power BI — the project successfully transformed over 3.7 million raw records into a reliable and insightful reporting layer.
 
