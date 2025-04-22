@@ -283,7 +283,8 @@ Built an orchestration pipeline to automate monthly data processing between stag
 Built a semantic model and created a Power BI report with filters
 | |
 | ----------- |
-![image](https://github.com/user-attachments/assets/71bbc51e-95c4-4e47-a98b-bd030796d729)
+![image](https://github.com/user-attachments/assets/4f105d92-52c3-4c62-b4c2-698ae5973f34)
+
 
 
 
