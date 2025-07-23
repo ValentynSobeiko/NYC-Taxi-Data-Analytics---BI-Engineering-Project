@@ -24,7 +24,7 @@ The project demonstrates the construction of a dynamic process for loading and p
 -  Power BI
 
 
-|Solution architecture|
+|Solution architecture |
 | ----------- |
 <img width="15160" height="6450" alt="Solution architecture" src="https://github.com/user-attachments/assets/2211533e-c7d8-4c00-b811-197a38a6b17d" />
 
